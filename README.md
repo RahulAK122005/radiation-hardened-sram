@@ -28,3 +28,45 @@ This project is applicable in systems where memory reliability under radiation e
 - Automotive Safety Systems
 - Military and Defense Electronics
 
+## Design Architecture
+
+The overall workflow of the project begins with the design of a conventional 6T SRAM cell, followed by the implementation of radiation-hardening techniques. Both the conventional and DICE SRAM cells are analyzed under transient current injection to evaluate their resistance against Single Event Upsets (SEUs).
+
+<p align="center">
+<img src="images/Functional_Block_Diagram.png" width="800">
+</p>
+
+*Figure 1. Overall project workflow.*
+
+## Tools & Technologies
+
+| Tool | Purpose |
+|------|---------|
+| Cadence Virtuoso | Schematic Design |
+| Spectre Simulator | Circuit Simulation |
+| CMOS Technology | SRAM Cell Design |
+| ADE | Waveform Analysis |
+
+
+## Conventional 6T SRAM Cell
+
+The conventional 6T SRAM cell consists of two cross-coupled CMOS inverters and two access transistors. It provides high-speed read and write operations but is susceptible to radiation-induced Single Event Upsets (SEUs) in harsh environments.
+
+<p align="center">
+<img src="images/6T_SRAM.png" width="650">
+</p>
+
+*Figure 2. Schematic of the conventional 6T SRAM cell.*
+
+
+## DICE SRAM Architecture
+
+The DICE (Dual Interlocked Storage Cell) architecture improves SRAM reliability by introducing four interlocked storage nodes. This redundancy enables the memory cell to recover from transient radiation-induced disturbances without data corruption.
+
+<p align="center">
+<img src="images/DICE_SRAM.png" width="650">
+</p>
+
+*Figure 3. DICE SRAM cell architecture.*
+
+
