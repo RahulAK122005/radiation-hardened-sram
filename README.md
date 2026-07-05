@@ -53,7 +53,7 @@ The overall workflow of the project begins with the design of a conventional 6T 
 The conventional 6T SRAM cell consists of two cross-coupled CMOS inverters and two access transistors. It provides high-speed read and write operations but is susceptible to radiation-induced Single Event Upsets (SEUs) in harsh environments.
 
 <p align="center">
-<img src="images/6T_SRAM.png" width="900">
+<img src="images/6T_SRAM_CELL.png" width="900">
 </p>
 
 *Figure 2. Schematic of the conventional 6T SRAM cell.*
